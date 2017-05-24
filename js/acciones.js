@@ -71,5 +71,3 @@ $('#timestamp').html(position.timestamp);
 	
   }
 	
-
- 
