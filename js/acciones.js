@@ -1,7 +1,7 @@
 // JavaScript Document
 
  $(document).ready(function(e) {
-    document.addEventListener("deviceready", onDeviceReady,false);
+    document.addEventListener("deviceready",onDeviceReady,false);
  
  });
  
@@ -35,7 +35,7 @@ function getPosition(){
             'Altitude Accuracy:'  +position.coords.altitudeAccuracy  +'\n'+ 
              'Heading:'            +position.coords.heading   +'\n'+ 
               'Speed:'             +position.coords.speed   +'\n'+ 
-              'Timestamp:'          +position..timesstamp  +'\n');
+              'Timestamp:'          +position.timestamp  +'\n');
 	};
 	
 	function onError(error){
@@ -46,7 +46,7 @@ function getPosition(){
 function watchPosition(){
 	
 var options={
-	maximumAge : 3600000,
+	maximumAge:3600000,
 	timeout:3000,
 	enableHighAccuracy :true,
 }
@@ -66,8 +66,8 @@ function onSuccess(position){
 };
 
 function onError(error){
-		alert('code:' +error.code  +'\n' +'message:'+error.message + '\n');
-}
+		alert('code:' +error.code  +'\n' +'message:'+ error.message + '\n');
+  }
 
 }
 
